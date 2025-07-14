@@ -1,15 +1,18 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+# Exclude all files by default
+*
+
+# Include Java/Kotlin source files in the main source set
+!**/src/main/java/**
+!**/src/main/kotlin/**
+
+# Include XML layout files in the main source set
+!**/src/main/res/layout/**
+
+# Include the AndroidManifest.xml file
+!**/src/main/AndroidManifest.xml
+
+
+# Exclude common build and IDE related folders (can be helpful for performance)
+build/
+.gradle/
+.idea/
