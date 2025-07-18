@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                         "City: " + city + "\n" +
                         "Pincode: " + pincode;
 
-                // Set the combined text to the TextView
+                // the combined text to the TextView
                 resultTextView.setText(combinedInputs);
             }
         });
