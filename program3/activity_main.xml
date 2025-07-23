@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 1. Display Area -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#E0E0E0"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="48sp" />
+
+    <!-- 2. Input Fields -->
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter number 1"
+        android:inputType="numberDecimal"
+        android:autofillHints="number" /> <!-- Added for autofill hint -->
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter number 2"
+        android:inputType="numberDecimal"
+        android:autofillHints="number" /> <!-- Added for autofill hint -->
+
+    <!-- 3. Operator Buttons in a Horizontal Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="24sp"
+            android:contentDescription="Add" /> <!-- FIX: Accessibility -->
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="24sp"
+            android:contentDescription="Subtract" /> <!-- FIX: Accessibility -->
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="24sp"
+            android:contentDescription="Multiply" /> <!-- FIX: Corrected ID and Accessibility -->
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="24sp"
+            android:contentDescription="Divide" /> <!-- FIX: Accessibility, removed marginEnd -->
+
+    </LinearLayout>
+
+    <!-- 4. Equals Button -->
+    <!-- FIX: Accessibility -->
+
+</LinearLayout>
